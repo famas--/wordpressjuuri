@@ -1,9 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="wp-content/themes/twentyfourteen-child4/style.css">
+</head>
+<body>
+
 <?php
 
 //sisällytetään yhteystidot
 include 'yhteys.php';
 
-
+error_reporting(0);
+ini_set('display_errors', 0);
 
 // tallennetaan postatut tiedot variableihin
 
@@ -107,10 +115,14 @@ $query = "INSERT INTO koulutuspalaute (
 if (!mysqli_query($yhteys,$query)) {
     die("error: " . mysqli_error($yhteys));
 	}
-echo "Tiedot vietiin tietokantaan";
+echo "<table class=\"tuomastablecenter\"><td><h1 >Kiitos palautteestasi</h1></td><tr>
+	<td><form action=\"http://localhost/wordpress/\"><input type=\"submit\" value=\"Takaisin etusivulle\"></form></td></table>";
 
 
 // suljetaan yhteys
 mysqli_close($yhteys);
 
 ?>
+
+</body>
+</html>
