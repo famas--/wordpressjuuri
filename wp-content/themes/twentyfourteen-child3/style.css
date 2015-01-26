@@ -1,0 +1,252 @@
+/*
+Theme Name: ICT3
+Theme URI http.//wordpress:8888/
+Description: Testi
+Author: Tuomas Anttila
+Author URI: http://nihakseutu.com
+Template: twentyfourteen
+Version: 0.1
+*/
+@import url("../twentyfourteen/style.css");
+
+
+.entry-title {
+	font-size: 40px;
+}
+
+.site-header {
+	background-color: #fff;
+	max-width: 1260px;
+	width: 100%;
+	z-index: 4;
+	margin: auto;
+}
+
+
+.site-title a,
+.site-title a:hover {
+	color: #fff;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+
+.site-navigation a:hover {
+	color: #707070;
+}
+
+.site {
+background-color: #fff;
+max-width: 1260px;
+margin: auto;
+
+}
+
+@media screen and (min-width: 1008px){
+	.site:before {
+		width: 0px;
+	}
+	.site-content {
+		margin-right: 29.04761904%;
+		margin-left: 0px;
+	
+	}
+}
+	
+	
+@media screen and (min-width: 1080px) {
+	.search-box .search-field {
+		width: 324px;
+	}
+
+	.site-content,
+	.site-main .widecolumn {
+		margin-left: 0px;
+	
+	}
+
+	.site:before {
+		width: 0px;
+	}
+
+	.search-box-wrapper,
+	.featured-content {
+		padding-left: 222px;
+	}
+
+	#secondary {
+		width: 162px;
+	}
+
+	.secondary-navigation,
+	.secondary-navigation ul ul {
+		width: 222px;
+	}
+
+	.secondary-navigation ul li:hover > ul,
+	.secondary-navigation ul li.focus > ul {
+		left: 202px;
+	}
+
+	.slider .featured-content .entry-title {
+		font-size: 33px;
+	}
+
+	.slider .featured-content .entry-header,
+	.slider-control-paging {
+		width: 534px;
+	}
+
+	.slider-control-paging {
+		padding-left: 24px;
+	}
+
+	.slider-control-paging li {
+		margin: 12px 12px 12px 0;
+	}
+
+	.slider-control-paging a {
+		height: 24px;
+		width: 24px;
+	}
+
+	.slider-control-paging a:before {
+		top: 6px;
+		left: 6px;
+	}
+}
+@media screen and (min-width: 783px){
+
+	.primary-navigation li {	
+		border: 0;
+		float: left;
+		display: block;
+		height: 48px;
+		line-height: 48px;
+		position: relative;
+		color: #000;
+	}
+	
+	.site-navigation a {
+	color: #000;
+	display: block;
+	text-transform: uppercase;
+	}
+	
+	.primary-navigation li:hover > a,
+	.primary-navigation li.focus > a {
+		background-color: #69db76;
+		color: #000;
+	}
+/**
+ * 6.0 Content
+ * -----------------------------------------------------------------------------
+ */
+
+	.content-area {
+	padding-top: 70px;
+	}
+
+	.hentry {
+	margin: 50px 0 0 0;
+	max-width: 100%;
+	}
+
+	.site-content .entry-header,
+	.site-content .entry-content,
+	.site-content .entry-summary,
+	.site-content .entry-meta,
+	.page-content {
+	margin: 0 0 0 48px;
+	max-width: 1000px;
+	}
+	
+	.page-content {
+	margin-bottom: 48px;
+	}
+
+/** Header color
+*/
+	.header-main {
+	background-color: #000;
+	min-height: 48px;
+	padding: 0 10px;
+	}
+
+/**
+ * 5.0 Navigation
+ * -----------------------------------------------------------------------------
+ */
+
+	.site-navigation a {
+	color: #000;
+	display: block;
+	text-transform: uppercase;
+	}
+ 
+ 
+	.site-navigation ul {
+	list-style: none;
+	margin: 0;
+	}
+
+	.site-navigation li {
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.site-navigation ul ul {
+	margin-left: 20px;
+	}
+
+
+	.site-navigation a:hover {
+	color: #41a62a;
+	}
+
+	.site-navigation .current_page_item > a,
+	.site-navigation .current_page_ancestor > a,
+	.site-navigation .current-menu-item > a,
+	.site-navigation .current-menu-ancestor > a {
+		color: #000;
+		font-weight: 900;
+		border-bottom: 5px;
+		border-style: solid;
+	}
+
+	/* Primary Navigation */
+
+
+
+	.primary-navigation {
+		float: right;
+		position: relative;
+		right: 0px;
+		
+	}
+
+	.primary-navigation.toggled-on {
+		padding: 20px 0 20px;
+	}
+
+/**
+ * 6.4 Entry Content
+ * -----------------------------------------------------------------------------
+ */
+
+	.site-content .entry-content,
+	.site-content .entry-summary,
+	.page-content {
+		background-color: #fff;
+		padding: 12px 10px 0;
+	}
+
+}
+@media screen and (min-width: 673px) {
+	.header-main {
+		padding: 0 30px;
+		background-color: #000;
+	}
+}
