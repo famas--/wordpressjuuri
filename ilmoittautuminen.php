@@ -22,7 +22,7 @@ while($tieto = mysqli_fetch_array ($nimi)){
 
 
 
-//luodaan lomake ja echotaan haetut tiedot lomakkeeseen
+//luodaan lomake ja echotaan haetut tiedot lomakkeeseen, aika muutetaan suomalaiseen muotoon
 echo "<table><tr>
 <td>Koulutuksen nimi:</td><td style=\"strong\">" . $tieto['koulutuksennimi'] . "</td>
 
