@@ -10,19 +10,12 @@
 //sisällytetään yhteystidot
 include 'yhteys.php';
 
+//jos lomakkeen input kohdat ovat tyhjiä, niin virheilmoituksia ei näytetä
 error_reporting(0);
 ini_set('display_errors', 0);
 
 // tallennetaan postatut tiedot variableihin
-
-
-
-
 $koulutusid = $_POST['koulutusid'];
-
-
-
-
 $k2a1 = $_POST['2a1'];
 $k2a2 = $_POST['2a2'];
 $k2a3 = $_POST['2a3'];
@@ -51,6 +44,7 @@ $kokonaisarvosana = $_POST['kokonaisarvosana'];
 $suositus = $_POST['suositus'];
 
 
+//pukataan muuttujiin tallennettu tieto koulutuspalaute taulukkoon
 $query = "INSERT INTO koulutuspalaute (
 		koulutusid,
 		2a1,
@@ -108,15 +102,16 @@ $query = "INSERT INTO koulutuspalaute (
 		'$kokonaisarvosana',
 		'$suositus')";
 
-// viedään $nimi variableen tallennettu tieto koulutustaulukkoon tietueeseen koulutuksen nimi
 
 		
 // ilmoitus jos vienti epäonnistui
 if (!mysqli_query($yhteys,$query)) {
     die("error: " . mysqli_error($yhteys));
 	}
+	
+//ilmoitus, jos vienti onnistui
 echo "<table class=\"tuomastablecenter\"><td><h1 >Kiitos palautteestasi</h1></td><tr>
-	<td><form action=\"http://localhost/wordpress/\"><input type=\"submit\" value=\"Takaisin etusivulle\"></form></td></table>";
+	<td><form action=\"http://www.nihakseutu.com/wordpress/\"><input type=\"submit\" value=\"Takaisin etusivulle\"></form></td></table>";
 
 
 // suljetaan yhteys
