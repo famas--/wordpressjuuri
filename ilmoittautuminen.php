@@ -16,13 +16,15 @@ $aloitusaikaklo = $_POST['aloitusaikaklo'];
 $lopetusaika = $_POST['lopetusaika'];
 $lopetusaikaklo = $_POST['lopetusaikaklo'];
 
-//Koulutuksen nimi kysely
+//haetaan koulutuksen tiedot
 $nimi = mysqli_query ($yhteys,"SELECT * FROM koulutus WHERE koulutusid = $id");
 while($tieto = mysqli_fetch_array ($nimi)){
 
+
+
+//luodaan lomake ja echotaan haetut tiedot lomakkeeseen
 echo "<table><tr>
 <td>Koulutuksen nimi:</td><td style=\"strong\">" . $tieto['koulutuksennimi'] . "</td>
-
 
 
 <form action=\"tavarailmoittautuneettaulukkoon.php\" method=\"post\"/>
