@@ -1,6 +1,6 @@
 <?php
 
-//yhteyksien määrittely
+//yhteyden määrittely
 $servername = "localhost";
 $username = "root";
 $password = "";
