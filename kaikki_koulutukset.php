@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link rel="stylesheet" type="text/css" href="wp-content/themes/twentyfourteen-child4/style.css">
+</head>
 <body>
 
 

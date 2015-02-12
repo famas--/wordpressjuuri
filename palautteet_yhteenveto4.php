@@ -3,7 +3,7 @@
 include 'yhteys2.php';
 
 echo "<html><head><title>testdoc</title>
-<script src=\"http://localhost/koulutushanke2/jquery-1.11.2.js\"></script>
+<script src=\"http://www.nihakseutu.com/wordpress/jquery-1.11.2.js\"></script>
 <script>
 jQuery(window).scroll(function() {
     jQuery('.div5').css('top', document.body.scrollTop);
@@ -119,7 +119,7 @@ $nimi2 = mysqli_query($yhteys,$nimi);
 echo 	
 			"<div class=\"wrap\">
 			<div class=\"div4\">
-				<div class=\"div13\"><form action=\"http://localhost/koulutushanke2/palautteet_yhteenveto_excel.php\" method=\"get\">
+				<div class=\"div13\"><form action=\"http://www.nihakseutu.com/wordpress/palautteet_yhteenveto_excel.php\" method=\"get\">
     <input type=\"submit\" value=\"LATAA EXCEL\" 
          name=\"Submit\" id=\"frm1_submit\" style=\"position:fixed;\" />
 		</form>Koulutus</div>
@@ -134,10 +134,10 @@ echo
 				
 				<div class=\"div7\"><b>KOULUTUKSEN HY&Ouml;TY</b></div>
 				<div class=\"div7\">Koulutus vastasi tarpeitani</div>
-				<div class=\"div7\">Koulutus oli sis&auml;llolt&auml;&auml;n onnistunut</div>
-				<div class=\"div7\">Koin koulutuksen sis&auml;llon mielenkiintoiseksi</div>
+				<div class=\"div7\">Koulutus oli sis&auml;ll&ouml;lt&auml;&auml;n onnistunut</div>
+				<div class=\"div7\">Koin koulutuksen sis&auml;ll&ouml;n mielenkiintoiseksi</div>
 				<div class=\"div7\">Koulutus edist&auml;&auml; ammatillista kehittymist&auml;ni</div>
-				<div class=\"div7\">Koulutuksen opit ovat sovellettavissa k&auml;yt&auml;ntoon</div>
+				<div class=\"div7\">Koulutuksen opit ovat sovellettavissa k&auml;yt&auml;nt&ouml;&ouml;n</div>
 				
 				
 				<div class=\"div7\"><b>KOULUTUKSESSA K&Auml;YTETYT MENETELM&Auml;T</b></div>

@@ -44,7 +44,7 @@ if (!mysqli_query($yhteys,$query)) {
     die("error: " . mysqli_error($yhteys));
 } 
 echo "<table class=\"tuomastablecenter\"><td><h1 >Ilmoittautumisesi onnistui!</h1></td><tr>
-	<td><form action=\"http://localhost/wordpress/\"><input type=\"submit\" value=\"Takaisin etusivulle\"></form></td></table>";
+	<td><form action=\"http://www.nihakseutu.com/wordpress/\"><input type=\"submit\" value=\"Takaisin etusivulle\"></form></td></table>";
 
 
 // suljetaan yhteys

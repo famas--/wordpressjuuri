@@ -2,9 +2,9 @@
 
 //yhteyksien määrittely
 $servername = "localhost";
-$username = "root";
-$password = "";
-$db = "koulutushanke";
+$username = "nihakseu_tuomas";
+$password = "Ft6Gy7Hu8Ji9=";
+$db = "nihakseu_wp_koulutushanke";
 
 
 

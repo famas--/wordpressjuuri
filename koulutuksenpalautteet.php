@@ -1,8 +1,8 @@
-
 <?php
 //sisällytetään yhteystidot
 include 'yhteys2.php';
 
+header('Content-Type: text/html; charset=UTF-8');
 
 // tallennetaan postatut tiedot variableihin
 
@@ -186,21 +186,21 @@ while($row = mysqli_fetch_array($tulos1)){
 while($row = mysqli_fetch_array($tulos2)){
 	echo 
 		"
-		<td>Koulutustapahtumasta tiedotettiin riittavasti etukateen</td>
+		<td>Koulutustapahtumasta tiedotettiin riittävästi etukäteen</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2a2,0))'],1) . "</td><tr>"; 
 		}
 		
 while($row = mysqli_fetch_array($tulos3)){
 	echo 
 		"
-		<td>Koulutus vastasi sisalloltaan sen tavoitteita ja ennakkotietoja</td>
+		<td>Koulutus vastasi sisallöltään sen tavoitteita ja ennakkotietoja</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2a3,0))'],1) . "</td><tr>"; 
 		}
 		
 while($row = mysqli_fetch_array($tulos4)){
 	echo 
 		"
-		<td>Kaytannon jarjestelyt toimivat hyvin</td>
+		<td>Käytännön järjestelyt toimivat hyvin</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2a4,0))'],1) . "</td><tr>"; 
 		}
 		
@@ -217,7 +217,7 @@ while($row = mysqli_fetch_array($tulos2aka)){
 		
 while($row = mysqli_fetch_array($tulos6)){
 	echo 
-		"<tr><td><h3>b. Koulutuksen hyoty<h3></td><tr>
+		"<tr><td><h3>b. Koulutuksen hyöty<h3></td><tr>
 		<td>Koulutus vastasi tarpeitani</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2b1,0))'],1) . "</td><tr>"; 
 		}
@@ -225,28 +225,28 @@ while($row = mysqli_fetch_array($tulos6)){
 while($row = mysqli_fetch_array($tulos7)){
 	echo 
 		"
-		<td>Koulutus oli sisalloltaan onnistunut</td>
+		<td>Koulutus oli sisällöltään onnistunut</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2b2,0))'],1) . "</td><tr>"; 
 		}
 		
 while($row = mysqli_fetch_array($tulos8)){
 	echo 
 		"
-		<td>Koin koulutuksen sisallon mielenkiintoiseksi</td>
+		<td>Koin koulutuksen sisällön mielenkiintoiseksi</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2b3,0))'],1) . "</td><tr>"; 
 		}
 
 while($row = mysqli_fetch_array($tulos9)){
 	echo 
 		"
-		<td>Koulutus edistaa ammatillista kehittymistani</td>
+		<td>Koulutus edistää ammatillista kehittymistäni</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2b4,0))'],1) . "</td><tr>"; 
 		}
 		
 while($row = mysqli_fetch_array($tulos10)){
 	echo 
 		"
-		<td>Koulutuksen opit ovat sovellettavissa kaytantoon</td>
+		<td>Koulutuksen opit ovat sovellettavissa käytäntöön</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2b5,0))'],1) . "</td><tr>"; 
 		}
 		
@@ -256,7 +256,7 @@ while($row = mysqli_fetch_array($tulos2bka)){
 		
 while($row = mysqli_fetch_array($tulos11)){
 	echo 
-		"<tr><td><h3>c. Koulutuksessa kaytetyt menetelmat<h3></td><tr>
+		"<tr><td><h3>c. Koulutuksessa käytetyt menetelmat<h3></td><tr>
 		<td>Koulutus vastasi tarpeitani</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2c1,0))'],1) . "</td><tr>"; 
 		}
@@ -264,28 +264,28 @@ while($row = mysqli_fetch_array($tulos11)){
 while($row = mysqli_fetch_array($tulos12)){
 	echo 
 		"
-		<td>Koulutus oli sisalloltaan onnistunut</td>
+		<td>Koulutus oli sisällöltään onnistunut</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2c2,0))'],1) . "</td><tr>"; 
 		}
 		
 while($row = mysqli_fetch_array($tulos13)){
 	echo 
 		"
-		<td>Koin koulutuksen sisallon mielenkiintoiseksi</td>
+		<td>Koin koulutuksen sisällön mielenkiintoiseksi</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2c3,0))'],1) . "</td><tr>"; 
 		}
 
 while($row = mysqli_fetch_array($tulos14)){
 	echo 
 		"
-		<td>Koulutus edistaa ammatillista kehittymistani</td>
+		<td>Koulutus edistää ammatillista kehittymistäni</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2c4,0))'],1) . "</td><tr>"; 
 		}
 		
 while($row = mysqli_fetch_array($tulos15)){
 	echo 
 		"
-		<td>Koulutuksen opit ovat sovellettavissa kaytantoon</td>
+		<td>Koulutuksen opit ovat sovellettavissa käytäntöön</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2c5,0))'],1) . "</td><tr>"; 
 		}
 
@@ -303,28 +303,28 @@ while($row = mysqli_fetch_array($tulos16)){
 while($row = mysqli_fetch_array($tulos17)){
 	echo 
 		"
-		<td>Koulutus oli sisalloltaan onnistunut</td>
+		<td>Koulutus oli sisällöltään onnistunut</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2d2,0))'],1) . "</td><tr>"; 
 		}
 		
 while($row = mysqli_fetch_array($tulos18)){
 	echo 
 		"
-		<td>Koin koulutuksen sisallon mielenkiintoiseksi</td>
+		<td>Koin koulutuksen sisällön mielenkiintoiseksi</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2d3,0))'],1) . "</td><tr>"; 
 		}
 
 while($row = mysqli_fetch_array($tulos19)){
 	echo 
 		"
-		<td>Koulutus edistaa ammatillista kehittymistani</td>
+		<td>Koulutus edistää ammatillista kehittymistäni</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2d4,0))'],1) . "</td><tr>"; 
 		}
 		
 while($row = mysqli_fetch_array($tulos20)){
 	echo 
 		"
-		<td>Koulutuksen opit ovat sovellettavissa kaytantoon</td>
+		<td>Koulutuksen opit ovat sovellettavissa käytäntöön</td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;". number_format($row['AVG(NULLIF(2d5,0))'],1) . "</td><tr>"; 
 		}
 
@@ -340,7 +340,7 @@ while($row = mysqli_fetch_array($tulos2kaikki)){
 		
 "</table>";
 		
-echo "<table width=\"800px\"><tr><td><h2>3. Vapaa sana<h2></td><tr><td><b>a. Mikä oli mielestasi koulutuksen parasta antia?</b></td><tr>";
+echo "<table width=\"800px\"><tr><td><h2>3. Vapaa sana<h2></td><tr><td><b>a. Mikä oli mielestäsi koulutuksen parasta antia?</b></td><tr>";
 while($row = mysqli_fetch_array($tulos21)){
 	if (!empty($row['3a'])){
 	echo "<td><br>". $row['3a'] . "<hr></td><tr>";} 
@@ -355,7 +355,7 @@ while($row = mysqli_fetch_array($tulos22)){
 	}
 		
 
-echo "<td><b>c. Minkalaiseen koulutukseen haluaisit jatkossa osallistua?</b></td><tr>";
+echo "<td><b>c. Minkälaiseen koulutukseen haluaisit jatkossa osallistua?</b></td><tr>";
 while($row = mysqli_fetch_array($tulos23)){
 	if (!empty($row['3c'])){
 	echo "<td><br>". $row['3c'] . "<hr></td><tr>";}

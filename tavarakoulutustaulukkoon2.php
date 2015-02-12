@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
 <?php
 
 //sisällytetään yhteystidot
@@ -53,9 +60,15 @@ $sql = "INSERT INTO koulutus (
 if (!mysqli_query($yhteys,$sql)) {
     die("error: " . mysqli_error());
 } 
-echo "Tiedot vietiin tietokantaan";
+
+echo "<table class=\"tuomastablecenter\"><td><h1 >Tiedot vietiin tietokantaan!</h1></td><tr>
+	<td><form action=\"http://www.nihakseutu.com/wordpress/?page_id=26\"><input type=\"submit\" value=\"Etusivulle\"></form></td></table>";
+
 
 
 // suljetaan yhteys
 mysqli_close($yhteys);
 ?>
+
+</body>
+</html>

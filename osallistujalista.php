@@ -1,7 +1,6 @@
-
 <?php
 //sisällytetään yhteystidot
-include 'yhteys2.php';
+include 'yhteys.php';
 
 header("Content-type: application/vnd.ms-excel");
 header("Content-Disposition: attachment;Filename=document_name.xls");

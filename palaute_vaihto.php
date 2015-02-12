@@ -25,6 +25,6 @@ if ($palaute == $kylla){
 // suljetaan yhteys
 mysqli_close($yhteys);
 
-header("Location: http://localhost/wordpress/?page_id=26"); /* Redirect browser */
+header("Location: http://www.nihakseutu.com/wordpress/?page_id=26"); /* Redirect browser */
 exit();
 ?>
