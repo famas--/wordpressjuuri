@@ -25,7 +25,7 @@ $ammatti = $_POST['ammatti'];
 
 
 
-// viedään $nimi variableen tallennettu tieto koulutustaulukkoon tietueeseen koulutuksen nimi
+// viedään muuttuja $nimi tallennettu tieto ilmoittautuneet taulukkoon
 $query = "INSERT INTO ilmoittautuneet (
 		koulutusid,
 		yritys,

@@ -3,9 +3,12 @@
 //sisällytetään yhteystidot
 include 'yhteys.php';
 
+
+//määritellään muuttuja
 $q = $_GET['q'];
 
 
+//haetaan koulutuksen id:llä koulutuksen paikka, toteuttaja ja ajankonta. echotaan tulokset. ajan muoto muutetaan suomalaiseksi 
 $sql = mysqli_query($yhteys,"SELECT * FROM koulutus WHERE koulutusid ='".$q."'");
 while($tulos = mysqli_fetch_array($sql)){
   echo "<table><tr>";

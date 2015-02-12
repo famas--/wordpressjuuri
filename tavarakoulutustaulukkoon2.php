@@ -33,7 +33,7 @@ $palaute = $_POST['palaute'];
 
 
 
-// viedään $nimi variableen tallennettu tieto koulutustaulukkoon tietueeseen koulutuksen nimi
+// viedään muuttujaan $nimi tallennettu tieto koulutustaulukkoon 
 $sql = "INSERT INTO koulutus (
 		koulutuksennimi,
 		paikka,
@@ -60,7 +60,11 @@ $sql = "INSERT INTO koulutus (
 if (!mysqli_query($yhteys,$sql)) {
     die("error: " . mysqli_error());
 } 
+<<<<<<< HEAD
 
+=======
+//ilmoitus jos vienti onnistui
+>>>>>>> 376b53e16ef31001ac875adbe7cbf63264080a99
 echo "<table class=\"tuomastablecenter\"><td><h1 >Tiedot vietiin tietokantaan!</h1></td><tr>
 	<td><form action=\"http://www.nihakseutu.com/wordpress/?page_id=26\"><input type=\"submit\" value=\"Etusivulle\"></form></td></table>";
 

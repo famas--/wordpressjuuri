@@ -1,6 +1,6 @@
 <?php
 
-//yhteyksien määrittely
+//yhteyden määrittely
 $servername = "localhost";
 $username = "nihakseu_tuomas";
 $password = "Ft6Gy7Hu8Ji9=";
